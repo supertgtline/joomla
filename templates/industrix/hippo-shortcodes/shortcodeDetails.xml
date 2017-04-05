@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hippoShortcodes>
+
+     <hippoShortcode name="grid" title="Grid / Column" image="preview/column.png">
+
+          <description>
+               <![CDATA[
+               Bootstrap 3 based grid and column system. This Example shortcode will produce three Columns on one row.
+               ]]>
+          </description>
+          <code><![CDATA[
+               [hippo-row id="" class=""]
+
+               [hippo-column class="col-md-4"] 
+
+               ...
+
+               [/hippo-column]
+
+               [hippo-column class="col-md-4"] 
+
+               ...
+
+               [/hippo-column]
+
+               [hippo-column class="col-md-4"] 
+
+               ...
+
+               [/hippo-column]
+
+               [/hippo-row]
+          ]]></code>
+
+
+          <options title="Options">
+               <option name="id">Row ID</option>
+               <option name="class" example="col-md-4, col-md-6">Row Class / Column Class</option>
+          </options>
+
+          </hippoShortcode> 
+
+
+          <hippoShortcode name="video" title="Video" image="preview/video.png">
+
+          <description>
+               <![CDATA[
+               This Shortcode will show a youtube / vimeo Video like:
+               <br /> Example: http://youtu.be/5Q7eLgU6NOk OR http://www.youtube.com/watch?v=5Q7eLgU6NOk 
+               <br /> OR
+               <br /> Example: http://vimeo.com/86295452
+               ]]>
+          </description>
+          <code><![CDATA[
+               [hippo-video height="400" width="800"]http://youtu.be/5Q7eLgU6NOk[/hippo-video]
+
+               OR
+
+               [hippo-video height="400" width="800"]http://vimeo.com/86295452[/hippo-video]
+          ]]></code>
+
+
+          <options title="Options">
+               <option name="height">Video Height</option>
+               <option name="width">Video Width</option>
+          </options>
+
+          </hippoShortcode>
+
+
+
+
+          <hippoShortcode name="tab" title="Tab" image="preview/tab.png">
+
+          <description>
+               <![CDATA[
+               This shortcode will show tab
+               ]]>
+          </description>
+          <code><![CDATA[
+                    [hippo-tabs id="" class="th-top-nav"]
+
+                    [hippo-tab-item title="Tab1" id="th-tab1" selected="yes" class=""]
+                    ...
+                    [/hippo-tab-item]
+
+                    [hippo-tab-item title="Tab2" id="th-tab2" selected="no" class=""]
+                    ...
+                    [/hippo-tab-item]
+
+                    [hippo-tab-item title="Tab3" id="th-tab3" selected="no" class=""]
+                    ...
+                    [/hippo-tab-item]
+
+                    [/hippo-tabs]
+          ]]></code>
+
+
+          <options title="Options">
+               <option name="class"><![CDATA[
+               "th-top-nav" class in "hippo-tabs" will make top positioned tab. <br>
+                                        selected="yes" in "hippo-tab-item" shortcode will make default opened tab item.<br>
+                                        all "id" of "hippo-tab-item" should unique value.<br>
+                                        "tabs-left" class in "hippo-tabs" will make left positioned tab. <br>
+                                        "tabs-right" class in "hippo-tabs" will make right positioned tab.
+                    ]]></option>
+               <option name="title">Tab title</option>
+               <option name="id">Tab ID</option>
+               <option name="selected" default="no" example="yes or no">Default Opened tab item Selected</option>
+          </options>
+
+          </hippoShortcode>
+
+
+
+          <hippoShortcode name="faicons" title="FontAwesome Icons" image="preview/icon.png">
+
+          <description>
+               <![CDATA[
+               This Shortcode will show a FontAwesome Icon
+               ]]>
+          </description>
+          <code><![CDATA[
+               [hippo-faicon name="camera"  size="" color=""  class=""]
+          ]]></code>
+
+          <options title="Options">
+               <option name="name">Name of Icon</option>
+               <option name="size"> Size of icon with out `px` </option>
+               <option name="color" example="yellow or #ffccff">Color Name or Color Code</option>
+               
+          </options>
+
+          </hippoShortcode>
+
+          <hippoShortcode name="icomoons" title="Icomoons" image="preview/flaticon.png">
+
+          <description>
+               <![CDATA[
+               This Shortcode will show a Icomoon Icon. To change font size, you have to apply css on pseudo class":before". For example- i:before{font-size:60px;}
+
+               ]]>
+          </description>
+          <code><![CDATA[
+               [hippo-icomoon name="beaker3" color="color name or color code" class="class name"]
+          ]]></code>
+
+          <options title="Options">
+               <option name="name">Name of Icon</option>
+               <option name="color" example="yellow or #ffccff">Color Name or Color Code</option>
+          </options>
+
+          </hippoShortcode>
+
+
+          <hippoShortcode name="accordions" title="Accordion" image="preview/accordion.png">
+
+          <description>
+               <![CDATA[
+               This Shortcode will produce a Accordions
+               ]]>
+          </description>
+          <code><![CDATA[
+               [hippo-accordions id="" class=""] 
+
+               [hippo-accordion-item title="Item 1" id="th-item1" open="yes" class=""] 
+               ...
+               [/hippo-accordion-item] 
+
+               [hippo-accordion-item title="Item 2" id="th-item2" open="no" class=""] 
+               ...
+               [/hippo-accordion-item] 
+
+               [hippo-accordion-item title="Item 3" id="th-item3" open="no" class=""] 
+               ...
+               [/hippo-accordion-item] 
+
+               [/hippo-accordions]
+          ]]></code>
+
+          <options title="Options">
+               <option name="id"> ID for Uniqueness </option>
+               <option name="title"> Accordion title </option>
+               <option name="open" example="yes or no">Defaulted opened accordion item.</option>
+               <option name="class">Class for Accordion item.</option>
+          </options>
+
+          </hippoShortcode>
+
+
+          <hippoShortcode name="skills" title="Skills" image="preview/skill.png">
+
+          <description>
+               <![CDATA[
+               This Shortcode will show skill bar
+               ]]>
+          </description>
+          <code><![CDATA[
+          [skills]
+
+               [skill title="Wordpress" percent="85"]
+
+               [skill title="Joomla" percent="80"]
+
+               [skill title="HTML5" percent="90"]
+
+               [skill title="CSS3" percent="70"]
+
+               [/skills]
+          ]]></code>
+
+          <options title="Options">
+             
+               <option name="title"> Skill title </option>
+               <option name="percent" example="from 0 to 100">Skill Percent.</option>
+               
+          </options>
+
+          </hippoShortcode>
+
+          <hippoShortcode name="counter" title="Counter" image="preview/counter.png">
+
+               <description>
+                    <![CDATA[
+                    This Shortcode will produce a incremental counter
+                    ]]>
+               </description>
+               <code><![CDATA[[hippo-counter from="0" to="1000" speed="1000" refresh="100" class=""]]]></code>
+
+               <options title="Options">
+                  
+                    <option name="starting-point" default="0" example="0"> "from" in "hippo-counter" shortcode is starting point. </option>
+                    <option name="stop-point" example="100">"to" in "hippo-counter" shortcode is counter stop point.</option>
+                    <option name="speed" example="100">"speed" in "hippo-counter" is counter incremental speed.</option>
+                    <option name="refresh">"refresh" in "hippo-counter" is counter refresh interval. </option>
+                    <option name="class">"class" in "hippo-counter" is custom css class name.</option>
+                    
+               </options>
+
+          </hippoShortcode>
+
+     </hippoShortcodes>

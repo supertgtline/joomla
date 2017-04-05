@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>Industrix</name>
+	<version>1.3</version>
+	<creationDate>1 Mar 2014</creationDate>
+	<author>themehippo.com</author>
+	<authorEmail>info@themehippo.com</authorEmail>
+	<authorUrl>http://www.themehippo.com</authorUrl>
+	<copyright>Copyright (C), ThemeHippo All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+		<div align="center">
+			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				<h3>You have installed Industrix successfully.</h3>
+				<p>Copyright 2004 - 2014 <a href='http://www.themehippo.com/' title='Visit themehippo.com!'>themehippo.com</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>helper.php</filename>
+		<filename>offline.php</filename>
+		<filename>error.php</filename>
+		<folder>admin</folder>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+		<folder>roksprocket</folder>
+		<folder>hippo-shortcodes</folder>
+		<folder>local</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_industrix.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_industrix.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>languageswitcherload</position>
+		<position>social-icon</position>
+		<position>th-login</position>
+		<position>head-search</position>
+		<position>mainnav</position>
+		<position>showcase-left</position>
+		<position>showcase-right</position>
+		<position>top-feature</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>mast-col</position>
+		<position>client</position>
+		<position>footer</position>
+		<position>features-intro-1</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>footer-0</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-right</position>
+		<position>debug</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+			<fieldset name="industrix_params" label="TPL_EXTENDED_TAB_LABEL" description="TPL_EXTENDED_TAB_LABEL">
+
+				<field name="tpl_article_info_datetime_format" type="list" default="d M Y"
+							 global="1"
+							 label="TPL_ARTICLE_INFO_DATETIME_FORMAT_LABEL"
+							 description="TPL_ARTICLE_INFO_DATETIME_FORMAT_DESC">
+					<option value="d M Y">TPL_DATE_SHORT</option>
+					<option value="d F Y">TPL_DATE_FULL_MONTH</option>
+					<option value="l, d F Y">TPL_DATE_FULL</option>
+				</field>
+
+				<field name="tpl_set_sticky_menu" global="1" class="btn-group btn-group-yesno" type="radio" default="1" label="TPL_STICKY_MENU_SET_LABEL" description="TPL_STICKY_MENU_SET_LABEL_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+			</fieldset>
+			
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="collection">http://themehippo.com/update</server>
+	</updateservers>
+
+</extension>

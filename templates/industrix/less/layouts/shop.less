@@ -1,0 +1,96 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org
+ *------------------------------------------------------------------------------
+ */
+
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+//--------------------------------------------------------
+// SHOP
+// --------------------------------------------------------
+// ALL styles related to shop layout
+
+
+/*productdetails*/
+
+.productdetails-view .PricesalesPrice{
+	color: @brand-primary;
+}
+
+
+
+.css-productdetails-tab .nav-tabs li.active a:before{
+	border-top-color: @brand-primary;
+}
+
+span.addtocart-button input.addtocart-button,
+a.ask-a-question:hover,
+.css-productdetails-tab .nav-tabs li a:hover,
+.back-to-category a:hover,
+.css-product .btn-primary,
+.css-product input.addtocart-button,
+button#checkoutFormSubmit,
+.css-coupon input.details-button,
+.css-shop-regform .buttonBar-right button.button,
+.product-neighbours a.previous-page,
+.product-neighbours a.next-page,
+.write-reviews .highlight-button,
+#fancybox-content a.continue_link,
+#fancybox-content a.showcart,
+input.highlight-button,
+#ui-tabs ul#tabs li:hover,
+#ui-tabs ul#tabs li.current,
+.vmCartModule .show_cart a{
+	background: @brand-primary!important;
+}
+
+span.addtocart-button input.addtocart-button:hover,
+.productdetails-view .notify.btn:hover,
+.css-product h3:hover a,
+.productdetails-view .notify.btn:hover,
+.icons a:hover:before,
+.t3-sidebar .vmgroup .vmproduct h3 a:hover,
+.t3-sidebar .VMmenu li a:hover,
+input.css-currency-submit:hover,
+.t3-sidebar ul.vmmanufacturer li a:hover,
+.css-vmshop-customer-login div > a:hover,
+.css-vm-newuser .vm-continue-shopping .continue_link:hover,
+.product-neighbours a.previous-page:hover,
+.product-neighbours a.next-page:hover,
+.vmCartModule .show_cart a:hover{
+	color: @brand-primary;
+}
+
+#fancybox-content a.continue_link,
+#fancybox-content a.showcart,
+.css-shop-regform .buttonBar-right button.button,
+input.highlight-button,
+.vm-button-correct{
+	&:hover{
+		background: darken(@brand-primary,10%)!important;
+		.transition(0.5s);
+	}
+}
+
+.vm-button-correct{
+	padding: 7px 12px;
+	background: @brand-primary!important;
+	border-radius: 0!important;
+	border: 0!important;
+}
+
+
+
+

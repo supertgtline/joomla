@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="2.5" client="administrator" method="upgrade">
+	<name>Vietnamese (Việt Nam)</name>
+	<version>2.5.4.beta</version>
+	<creationDate>05/04/2012</creationDate>
+	<author>www.leweb2.com</author>
+	<authorEmail>info@leweb2.com</authorEmail>
+	<authorUrl>www.leweb2.com</authorUrl>
+	<copyright>Copyright (C) 2011 - 2012 LEWEB2.COM. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>Ngôn ngữ tiếng Việt cho Joomla 2.5 (Admin)</description>
+	<metadata>
+		<name>Vietnamese (Việt Nam)</name>
+		<tag>vi-VN</tag>
+		<rtl>0</rtl>
+		<locale>vi_VN, vie_VN, vn, vietnam, viet nam, vietnamese, Việt Nam</locale>
+		<firstDay>1</firstDay>
+	</metadata>
+</metafile>

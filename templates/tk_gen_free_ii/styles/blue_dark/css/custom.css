@@ -1,0 +1,103 @@
+
+@import url(../../../css/custom.css);
+
+
+/*main sections-------------------------------------------*/
+#page{
+  background:#222222;
+}
+
+#block-footer {border-top: 1px solid #4a4a4a;}
+
+#top-a, #top-b, #main, #bottom-a {background: #363636; color: #c4c4c4;}
+
+
+/*modules-------------------------------------------------*/
+.mod-box {
+  padding: 15px;
+  border: 1px solid #2d2d2d;
+  border-radius: 3px;
+  moz-border-radius: 3px;
+  box-shadow: 1px 1px 3px #2d2d2d;
+}
+
+
+/*system--------------------------------------------------*/
+#system .items .item {
+  margin-top: 12px;
+  padding-top: 18px;
+  border-top: 1px dashed #8f8f8f;
+}
+
+#system .items .leading .item {
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+  border-bottom: 1px dashed #8f8f8f;
+  margin-top:10px;
+}
+
+#system .title a, a { color: #4396e9; }
+
+
+/*tools-----------------------------------------------------*/
+.box-content, .box-note, .box-info, .box-warning, .box-hint, .box-download, pre { color: #222222;}
+
+form.box fieldset { border: 1px solid #8f8f8f; }
+form.box legend { background: #fff; color:#222222; }
+
+ul.zebra > li,
+table.zebra tbody td { border-bottom: 1px solid #858585; }
+ul.zebra > li:first-child,
+table.zebra tbody tr:first-child td { border-top: 1px solid #858585; }
+
+ul.zebra > li.odd,
+table.zebra tbody tr.odd { background: #454545; }
+ul.zebra > li:nth-of-type(odd),
+table.zebra tbody tr:nth-of-type(odd) { background: #454545; color: #222222;}
+
+table.zebra caption { color: #999; }
+
+ul.line > li { border-top: 1px solid #8f8f8f; }
+
+
+/*base-------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  color: #4396e9;
+}
+
+
+/*menus-------------------------------------------------------*/
+.menu-sidebar a,
+.menu-sidebar li > span { color: #4396e9; }
+
+.menu-sidebar li.level1 { border-top: 1px solid #8f8f8f; }
+
+
+/*zoo----------------------------------------------------------*/
+.pos-subtitle {color:#4396e9;}
+
+#system #comments .comment-head, #system .author-box {
+	color:#222222;
+}
+
+#system #comments .comment-head .author ,#system .author-box h3{
+	text-shadow: 1px 1px 0 #222222;
+}
+
+#system #respond h3 {color:#4396e9;}
+
+#system #comments .comment-head, #system .author-box, pre {
+	border: 1px solid #6b6b6b;
+	background: #1a1a1a;
+	border-radius: 3px;
+	color: #ddd;
+}
+
+#system #respond textarea, #system #respond input[type="text"], #system #respond form.submission fieldset > div > textarea{
+	border: 1px solid #6b6b6b;
+  border-radius: 3px;
+  moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background:#1a1a1a;
+  color: #ddd;
+}

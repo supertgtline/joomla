@@ -1,0 +1,58 @@
+.productdetails-view .PricesalesPrice {
+  color: #ff8800;
+}
+.css-productdetails-tab .nav-tabs li.active a:before {
+  border-top-color: #ff8800;
+}
+span.addtocart-button input.addtocart-button,
+a.ask-a-question:hover,
+.css-productdetails-tab .nav-tabs li a:hover,
+.back-to-category a:hover,
+.css-product .btn-primary,
+.css-product input.addtocart-button,
+button#checkoutFormSubmit,
+.css-coupon input.details-button,
+.css-shop-regform .buttonBar-right button.button,
+.product-neighbours a.previous-page,
+.product-neighbours a.next-page,
+.write-reviews .highlight-button,
+#fancybox-content a.continue_link,
+#fancybox-content a.showcart,
+input.highlight-button,
+#ui-tabs ul#tabs li:hover,
+#ui-tabs ul#tabs li.current,
+.vmCartModule .show_cart a {
+  background: #ff8800 !important;
+}
+span.addtocart-button input.addtocart-button:hover,
+.productdetails-view .notify.btn:hover,
+.css-product h3:hover a,
+.productdetails-view .notify.btn:hover,
+.icons a:hover:before,
+.t3-sidebar .vmgroup .vmproduct h3 a:hover,
+.t3-sidebar .VMmenu li a:hover,
+input.css-currency-submit:hover,
+.t3-sidebar ul.vmmanufacturer li a:hover,
+.css-vmshop-customer-login div > a:hover,
+.css-vm-newuser .vm-continue-shopping .continue_link:hover,
+.product-neighbours a.previous-page:hover,
+.product-neighbours a.next-page:hover,
+.vmCartModule .show_cart a:hover {
+  color: #ff8800;
+}
+#fancybox-content a.continue_link:hover,
+#fancybox-content a.showcart:hover,
+.css-shop-regform .buttonBar-right button.button:hover,
+input.highlight-button:hover,
+.vm-button-correct:hover {
+  background: #cc6d00 !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.vm-button-correct {
+  padding: 7px 12px;
+  background: #ff8800 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+}

@@ -1,0 +1,38 @@
+/**
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+/* Layout - Sprocket Headlines - Core */
+.sprocket-headlines {position: relative;display: table;width: 100%;overflow: hidden;}
+.sprocket-headlines:after {display: table;content: "";*zoom: 1;clear: both;}
+.sprocket-headlines-container {display: table-row;}
+.sprocket-headlines ul {list-style: none !important;margin: 0;}
+
+/* Layout - Sprocket Headlines - Badge */
+.sprocket-headlines-badge {float: left;}
+.sprocket-headlines-badge span {display: block;padding: 10px !important;font-size: 1.1em;line-height: 1.2em;}
+
+/* Layout - Sprocket Headlines - Items */
+.sprocket-headlines-list {padding: 10px;overflow: hidden; position: relative;}
+
+.sprocket-headlines-list li a.sprocket-headlines-text{ display: block; width: 100%; color: #222;}
+.sprocket-headlines-item {position: absolute;opacity: 0;height: 0;width: 0;display: block;visibility: hidden;}
+.sprocket-headlines-item.active {position: relative;opacity: 1;height: auto;width: auto;float: left;visibility: visible;}
+.animation-slideandfade .sprocket-headlines-item {margin-top: -100px;}
+.animation-slideandfade .sprocket-headlines-item.active {margin-top: 0;}
+.sprocket-headlines-image {margin-right: 10px;}
+
+/* Layout - Sprocket Headlines - Navigation */
+.sprocket-headlines-navigation {display: table-cell; padding: 0 10px; vertical-align: middle; }
+.sprocket-headlines-navigation .arrow {float: right; height: 24px;}
+.sprocket-headlines-navigation .arrow:hover {}
+
+/* Layout - Sprocket Headlines - Colors */
+.sprocket-headlines {}
+.sprocket-headlines-navigation .arrow {}
+
+/* Layout - Sprocket Headlines - Transitions */
+.animation-slideandfade .sprocket-headlines-item.active {-webkit-transition: margin 0.3s ease-out, opacity 0.4s ease-in;-moz-transition: margin 0.3s ease-out, opacity 0.4s ease-in;-o-transition: margin 0.3s ease-out, opacity 0.4s ease-in;transition: margin 0.3s ease-out, opacity 0.4s ease-in;}
+.animation-fade .sprocket-headlines-item.active {-webkit-transition: opacity 0.4s ease-in;-moz-transition: opacity 0.4s ease-in;-o-transition: opacity 0.4s ease-in;transition: opacity 0.4s ease-in;}
+.sprocket-headlines-navigation .arrow {-webkit-transition: opacity 0.2s ease-in;-moz-transition: opacity 0.2s ease-in;-o-transition: opacity 0.2s ease-in;transition: opacity 0.2s ease-in;}

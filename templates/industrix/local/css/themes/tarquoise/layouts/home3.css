@@ -1,0 +1,70 @@
+.navbar-brand.logo {
+  position: relative;
+  z-index: 1;
+  margin: 0 20px 0 10px;
+}
+@media (max-width: 991px) {
+  .navbar-brand.logo {
+    left: 60px;
+  }
+}
+.th-service {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.th-service .fa {
+  margin-right: 10px;
+  background: #16a085;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 31px;
+  border-radius: 50%;
+}
+.th-service a {
+  color: #444444;
+}
+.th-service a:hover {
+  color: #16a085;
+}
+.th-service > div {
+  padding: 20px 5px;
+  text-align: center;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .th-service > div {
+    margin: 10px 0;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+.left-review-text {
+  padding: 30px;
+}
+@media only (max-width: 992px) {
+  .left-review-text {
+    padding: 30px 0 20px 30px;
+  }
+}
+.left-review-text p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #adb2bb;
+}
+.left-icon-text {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 80px;
+}
+.left-icon-text .icon {
+  text-align: center;
+  color: #16a085;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 50px;
+}

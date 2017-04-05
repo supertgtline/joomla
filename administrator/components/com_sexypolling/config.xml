@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <!--Joomla 1.6-->
+	<fields>
+		<fieldset name="Answers" label="COM_SEXYPOLLING_FIELDSET_ANSWERS_LABEL" description="COM_SEXYPOLLING_FIELDSET_ANSWERS_DESCRIPTION">
+			    <field name="answerPermission" type="radio" default="1" label="COM_SEXYPOLLING_WHO_CAN_ADD_AN_ANSWER_LABEL" description="COM_SEXYPOLLING_WHO_CAN_ADD_AN_ANSWER_DESCRIPTION" class="btn-group">
+				  <option value="1">COM_SEXYPOLLING_PUBLIC</option>
+				  <option value="0">COM_SEXYPOLLING_REGISTERED</option>
+				  <option value="2">COM_SEXYPOLLING_NONE</option>
+				</field>
+				
+					
+			    <field name="autoPublish" type="radio" default="1" label="COM_SEXYPOLLING_AUTOPUBLISHMENT_LABEL" description="COM_SEXYPOLLING_AUTOPUBLISHMENT_DESCRIPTION" class="btn-group">
+				  <option value="1">JYes</option>
+				  <option value="0">JNo</option>
+				</field>
+				
+		</fieldset>
+		<fieldset name="Animation" label="COM_SEXYPOLLING_FIELDSET_ANIMATION_LABEL" description="COM_SEXYPOLLING_FIELDSET_ANIMATION_DESCRIPTION">
+				
+				 <field name="barAnimationType" type="list" default="linear" label="COM_SEXYPOLLING_BAR_ANIMATION_TYPE_LABEL" description="COM_SEXYPOLLING_BAR_ANIMATION_TYPE_DESCRIPTION">
+				  <option value="linear">linear</option>
+				  <option value="swing">swing</option>
+				  <option value="easeInQuad">easeInQuad</option>
+				  <option value="easeOutQuad">easeOutQuad</option>
+				  <option value="easeInOutQuad">easeInOutQuad</option>
+				  <option value="easeInCubic">easeInCubic</option>
+				  <option value="easeOutCubic">easeOutCubic</option>
+				  <option value="easeInOutCubic">easeInOutCubic</option>
+				  <option value="easeInQuart">easeInQuart</option>
+				  <option value="easeOutQuart">easeOutQuart</option>
+				  <option value="easeInOutQuart">easeInOutQuart</option>
+				  <option value="easeInQuint">easeInQuint</option>
+				  <option value="easeOutQuint">easeOutQuint</option>
+				  <option value="easeInOutQuint">easeInOutQuint</option>
+				  <option value="easeInSine">easeInSine</option>
+				  <option value="easeOutSine">easeOutSine</option>
+				  <option value="easeInOutSine">easeInOutSine</option>
+				  <option value="easeInExpo">easeInExpo</option>
+				  <option value="easeOutExpo">easeOutExpo</option>
+				  <option value="easeInOutExpo">easeInOutExpo</option>
+				  <option value="easeInCirc">easeInCirc</option>
+				  <option value="easeOutCirc">easeOutCirc</option>
+				  <option value="easeInOutCirc">easeInOutCirc</option>
+				  <option value="easeInElastic">easeInElastic</option>
+				  <option value="easeOutElastic">easeOutElastic</option>
+				  <option value="easeInOutElastic">easeInOutElastic</option>
+				  <option value="easeInBack">easeInBack</option>
+				  <option value="easeOutBack">easeOutBack</option>
+				  <option value="easeInOutBack">easeInOutBack</option>
+				  <option value="easeInBounce">easeInBounce</option>
+				  <option value="easeOutBounce">easeOutBounce</option>
+				  <option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+				
+				 <field name="colorAnimationType" type="list" default="linear" label="COM_SEXYPOLLING_COLOR_ANIMATION_TYPE_LABEL" description="COM_SEXYPOLLING_COLOR_ANIMATION_TYPE_DESCRIPTION">
+				  <option value="linear">linear</option>
+				  <option value="swing">swing</option>
+				  <option value="easeInQuad">easeInQuad</option>
+				  <option value="easeOutQuad">easeOutQuad</option>
+				  <option value="easeInOutQuad">easeInOutQuad</option>
+				  <option value="easeInCubic">easeInCubic</option>
+				  <option value="easeOutCubic">easeOutCubic</option>
+				  <option value="easeInOutCubic">easeInOutCubic</option>
+				  <option value="easeInQuart">easeInQuart</option>
+				  <option value="easeOutQuart">easeOutQuart</option>
+				  <option value="easeInOutQuart">easeInOutQuart</option>
+				  <option value="easeInQuint">easeInQuint</option>
+				  <option value="easeOutQuint">easeOutQuint</option>
+				  <option value="easeInOutQuint">easeInOutQuint</option>
+				  <option value="easeInSine">easeInSine</option>
+				  <option value="easeOutSine">easeOutSine</option>
+				  <option value="easeInOutSine">easeInOutSine</option>
+				  <option value="easeInExpo">easeInExpo</option>
+				  <option value="easeOutExpo">easeOutExpo</option>
+				  <option value="easeInOutExpo">easeInOutExpo</option>
+				  <option value="easeInCirc">easeInCirc</option>
+				  <option value="easeOutCirc">easeOutCirc</option>
+				  <option value="easeInOutCirc">easeInOutCirc</option>
+				  <option value="easeInElastic">easeInElastic</option>
+				  <option value="easeOutElastic">easeOutElastic</option>
+				  <option value="easeInOutElastic">easeInOutElastic</option>
+				  <option value="easeInBack">easeInBack</option>
+				  <option value="easeOutBack">easeOutBack</option>
+				  <option value="easeInOutBack">easeInOutBack</option>
+				  <option value="easeInBounce">easeInBounce</option>
+				  <option value="easeOutBounce">easeOutBounce</option>
+				  <option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+				
+				 <field name="reorderingAnimationType" type="list" default="linear" label="COM_SEXYPOLLING_REORDERING_ANIMATION_TYPE_LABEL" description="COM_SEXYPOLLING_REORDERING_ANIMATION_TYPE_DESCRIPTION">
+				  <option value="linear">linear</option>
+				  <option value="swing">swing</option>
+				  <option value="easeInQuad">easeInQuad</option>
+				  <option value="easeOutQuad">easeOutQuad</option>
+				  <option value="easeInOutQuad">easeInOutQuad</option>
+				  <option value="easeInCubic">easeInCubic</option>
+				  <option value="easeOutCubic">easeOutCubic</option>
+				  <option value="easeInOutCubic">easeInOutCubic</option>
+				  <option value="easeInQuart">easeInQuart</option>
+				  <option value="easeOutQuart">easeOutQuart</option>
+				  <option value="easeInOutQuart">easeInOutQuart</option>
+				  <option value="easeInQuint">easeInQuint</option>
+				  <option value="easeOutQuint">easeOutQuint</option>
+				  <option value="easeInOutQuint">easeInOutQuint</option>
+				  <option value="easeInSine">easeInSine</option>
+				  <option value="easeOutSine">easeOutSine</option>
+				  <option value="easeInOutSine">easeInOutSine</option>
+				  <option value="easeInExpo">easeInExpo</option>
+				  <option value="easeOutExpo">easeOutExpo</option>
+				  <option value="easeInOutExpo">easeInOutExpo</option>
+				  <option value="easeInCirc">easeInCirc</option>
+				  <option value="easeOutCirc">easeOutCirc</option>
+				  <option value="easeInOutCirc">easeInOutCirc</option>
+				  <option value="easeInElastic">easeInElastic</option>
+				  <option value="easeOutElastic">easeOutElastic</option>
+				  <option value="easeInOutElastic">easeInOutElastic</option>
+				  <option value="easeInBack">easeInBack</option>
+				  <option value="easeOutBack">easeOutBack</option>
+				  <option value="easeInOutBack">easeInOutBack</option>
+				  <option value="easeInBounce">easeInBounce</option>
+				  <option value="easeOutBounce">easeOutBounce</option>
+				  <option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="Other-parameters" label="COM_SEXYPOLLING_FIELDSET_OTHER_PARAMETERS_LABEL" description="COM_SEXYPOLLING_FIELDSET_OTHER_PARAMETERS_DESCRIPTION">		
+				<field name="dateFormat" type="radio" default="1" label="COM_SEXYPOLLING_DATE_FORMAT_LABEL" description="COM_SEXYPOLLING_DATE_FORMAT_DESCRIPTION" class="btn-group">
+				  <option value="1">String</option>
+				  <option value="0">Digits</option>
+				</field>
+				
+				 <field name="autoOpenTimeline" type="radio" default="1" label="COM_SEXYPOLLING_OPEN_TIMELINE_AUTOMATICALLY_LABEL" description="COM_SEXYPOLLING_OPEN_TIMELINE_AUTOMATICALLY_DESCRIPTION" class="btn-group">
+				  <option value="1">JYes</option>
+				  <option value="0">JNo</option>
+				</field>
+				
+				<field name="autoAnimate" type="radio" default="1" label="COM_SEXYPOLLING_AUTOANIMATE_FOR_VOTED_POLLS_LABEL" description="COM_SEXYPOLLING_AUTOANIMATE_FOR_VOTED_POLLS_DESCRIPTION" class="btn-group">
+				  <option value="1">JYes</option>
+				  <option value="0">JNo</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="Security" label="COM_SEXYPOLLING_FIELDSET_SECURITY_LABEL" description="COM_SEXYPOLLING_FIELDSET_SECURITY_DESCRIPTION">
+				
+				<field name="checkIp" type="radio" default="1" label="COM_SEXYPOLLING_CHECK_IP_LABEL" description="COM_SEXYPOLLING_CHECK_IP_DESCRIPTION" class="btn-group">
+				  <option value="1">JYes</option>
+				  <option value="0">JNo</option>
+				</field>
+				<field name="checkCookie" type="radio" default="1" label="COM_SEXYPOLLING_CHECK_COOKIES_LABEL" description="COM_SEXYPOLLING_CHECK_COOKIES_DESCRIPTION" class="btn-group">
+				  <option value="1">JYes</option>
+				  <option value="0">JNo</option>
+				</field>
+		</fieldset>
+	</fields>
+</config>

@@ -1,0 +1,30 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+ 
+#page {
+	background: #ABCBE3;
+}
+
+#block-header, #block-footer {
+	background: url(../images/pattern.jpg);
+}
+
+#main, #top-a, #top-b, #bottom-a, #bottom-b {background: #eaf6ff;}
+
+#logo p {margin:0;}
+
+#menubar {padding:5px;}
+
+#toolbar {color:#fff;}
+
+
+
+#footer, #footer a {color:#fff;}
+
+#footer {padding:5px;}
+
+
+

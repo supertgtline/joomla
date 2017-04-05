@@ -1,0 +1,110 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       Industrix
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2002-2014 themehippo.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       Themehippo
+ * @Link:         http://themehippo.com
+ *------------------------------------------------------------------------------
+ */
+
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// logo
+//--------------------
+
+.navbar-brand.logo{
+	position:relative;
+	z-index: 1;
+	margin:0 20px 0 10px;
+
+	@media (max-width: @screen-sm-max) {
+		left:60px;
+	}
+}
+
+
+// Services
+//---------------------
+
+.th-service{
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	
+	.fa{
+		margin-right: 10px;
+		background: @brand-primary;
+		color: @white;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		line-height: 31px;
+		border-radius: 50%;
+	}
+
+		a{
+			color: @text-color;
+			&:hover{
+				color: @brand-primary;
+			}
+		}
+
+	> div{	
+		padding: 20px 5px;
+		text-align: center;
+		display: inline-block;
+
+		// Responsive
+		@media (max-width: @screen-sm-max) {
+			margin:10px 0;
+			text-align: left;
+			padding-left: 20px;
+			}		
+	}
+}
+
+
+// LEFT TEXT WITH IMAGE
+//-------------------------
+
+.left-review-text{
+	
+	padding: 30px;
+ 
+ @media only(max-width: @screen-md-min){
+ 	padding: 30px 0 20px 30px;
+ }
+
+	p{
+		font-size: 18px;
+		line-height: 24px;
+		color: #adb2bb;
+	}
+}
+
+
+// LEFT ICON
+//-------------------------
+
+.left-icon-text{
+	position: relative;
+	margin-bottom: 40px;
+	padding-left: 80px;
+	.icon{
+		text-align: center;
+		color:@brand-primary;
+		position: absolute;
+		left: 0;
+		top: 10px;
+		font-size: 50px;
+	}
+}
+
+
+

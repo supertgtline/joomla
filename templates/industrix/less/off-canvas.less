@@ -1,0 +1,288 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org
+ * @credits       Mary Lou - http://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations/
+ *------------------------------------------------------------------------------
+ */
+
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t3/base-bs3/less/off-canvas.less";
+
+
+
+//
+// OFF-CANVAS
+// -------------------------------------
+
+// Toggle Button
+// -------------------
+.off-canvas-toggle {
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  color: @navbar-default-color;
+  padding: 0;
+  width: @navbar-height;
+  height: @navbar-height;
+  line-height: @navbar-height;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .transition(all .3s);
+  // States
+  &:hover, &:active, &:focus {
+    outline: none;
+    .box-shadow(none);
+    background: @brand-primary;
+    color: @navbar-default-link-hover-color;
+  }
+}
+
+
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+.t3-off-canvas {
+
+  // Generic
+  // -----------------------------------
+  background: @t3-off-canvas-background;
+  color: @t3-off-canvas-text-color;
+
+
+  // Header
+  // -----------------------------------
+  .t3-off-canvas-header {
+    background: @t3-off-canvas-header-background;
+    color: @t3-off-canvas-header-text-color;
+    padding: 0 0 0 @t3-global-padding;
+    height: 40px;
+    line-height: 40px;
+
+    // Title
+    h2 {
+      margin: 0;
+      line-height: 40px;
+      font-size: @font-size-base;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+  }
+
+  // Close Button
+  .close {
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    background: @t3-off-canvas-header-background;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: @t3-off-canvas-header-text-color;
+    text-shadow: none;
+    font-weight: 700;
+    .opacity(1);
+    .transition(all .3s linear);
+
+    &:hover{
+      background:@brand-primary;
+      color: #fff;
+    }
+  }
+
+
+  // Body
+  // -----------------------------------
+  .t3-off-canvas-body {
+
+    padding: @t3-global-padding/2 @t3-global-padding;
+
+    // Links
+    // ------------
+    a {
+      color: @t3-off-canvas-link-color;
+      text-decoration: none;
+      border-bottom: 0;
+
+      &:hover,
+      &:focus {
+        color: @t3-off-canvas-link-hover-color !important;
+        text-decoration: none;
+        border-bottom: 0;
+      }
+
+      &:focus {
+        .tab-focus();
+      }
+    }
+
+    li.open > a {
+      border-bottom: 0;
+    }
+
+
+    // Dropdown Menu
+    // ------------
+    .dropdown-menu {
+
+      > li{
+        border-top:1px solid #eee;
+      }
+
+      > li > a {
+        padding: @t3-global-padding/2 @t3-global-padding;
+      }
+
+      > li:last-child > a {
+        border-bottom: none;
+      }
+
+      .active a {
+        background: transparent;
+      }
+
+      > .active > a {
+        color: @link-color;
+      }
+
+      .dropdown-submenu > a:after {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid @link-color;
+        border-bottom: 0;
+        display: inline-block;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        width: 0;
+        position: absolute;
+        right: @t3-global-padding/2;
+      }
+
+      .dropdown-submenu > a:hover,
+      .dropdown-submenu:hover > a {
+
+        color: @link-color;
+
+        &:after {
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-top: 4px solid @link-color;
+          border-bottom: 0;
+        }
+      }
+
+      .dropdown-menu > li > a {
+        padding-left: @t3-global-padding * 1.5;
+        font-weight: 300;
+      }
+    }
+
+    // Navigations
+    // ------------
+    .nav {
+      > li,
+      .dropdown-toggle {
+       
+
+        > a,
+        > .dropdown-toggle {
+          font-weight: 400;
+          background: none;
+          text-transform: none;
+          color: @t3-off-canvas-text-color;
+          padding: @t3-global-padding/2 @t3-global-padding;
+
+          .caret {
+            float: right;
+            margin-top: @t3-global-margin/2;
+            border-top-color: @link-color;
+          }
+
+          &:before {
+            content: "\f10c";
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            margin-top: 6px;
+            font-size: 10px;
+          }
+        }
+
+        &.active {
+          > a,
+          > .dropdown-toggle {
+            background: none;
+            text-transform: none;
+            color: @link-color;
+
+            .caret {
+              border-top-color: @link-color;
+            }
+          }
+        }
+
+        > a:hover, > a:focus, > a:active {
+          background: none;
+          text-transform: none;
+          color: @link-color;
+
+          .caret {
+            border-top-color: @link-color;
+          }
+        }
+      }
+    }
+
+    // Dropdown Menu
+    .dropdown-menu {
+      background: @t3-off-canvas-background;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      > li > a {
+        background: none;
+        color: @t3-off-canvas-text-color;
+      }
+    }
+
+
+    // Modules
+    // ------------
+    .t3-module {
+      margin-bottom: @line-height-computed;
+    }
+
+    .module-title  {
+      margin-bottom: @line-height-computed / 2;
+      color: @white;
+    }
+
+  // End Off-Canvas Body
+  }
+
+// End Off-Canvas Content Styles
+}
